@@ -1,0 +1,21 @@
+{
+  "name": "drone-location-api-builder",
+  "version": "1.0.0",
+  "description": "API with Mongo database of global airport codes & geo political data",
+  "main": "./src/buildDB.js",
+  "scripts": {
+    "build:db": "node ./src/buildDB.js",
+    "build:server": "cd api && npm install",
+    "dev": "cd api && npm run dev",
+    "example": "node ./src/example.js"
+  },
+  "repository": "https://github.com/obe711/drone-location-api.git",
+  "author": "Obediah Klopfenstein <obe711@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "mongoose": "^5.13.2",
+    "stream-json": "^1.7.2"
+  }
+}
